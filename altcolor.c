@@ -1,21 +1,17 @@
-#include<msp430.h>
-int red()
+#include <msp430.h>
+void delay()
 {
-	long int i = 0;
-	for( i = 0; i < 10000 ; ++i);
-	P1DIR = 0x01 ;
-	P1OUT = 0x01 ;
-	green();
-}
-int  green()
-{
-	long int i = 0 ;
-	for( i = 0; i < 10000; ++i);
-	P1DIR = 0x40 ;
-	P1OUT = 0x40 ;
-	red();
+	int i;
+	for(i = 0;i < 20000 ; i++);
 }
 main()
 {
-	red();
+	P1DIR = 0x41;
+	P1OUT = 0X41;
+	while(1)
+	{
+	P1OUT ^= 0x01;
+	delay();
+	P1OUT ^= 0x40;
+	}
 }
