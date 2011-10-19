@@ -7,7 +7,7 @@ void delay()
 main()
 {
 	P1DIR = 0x41;
-	P1OUT = 0X41;
+	P1OUT = 0x41;
 	while(1)
 	{
 	P1OUT ^= 0x01;
