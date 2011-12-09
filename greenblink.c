@@ -1,7 +1,7 @@
 #include<msp430.h>
 void delay()
 {
-	int i;
+	int i ;
 	for(i=0;i<20000;++i) ;
 }
 main()	//red blink.
