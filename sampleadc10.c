@@ -25,9 +25,9 @@ main()
 		start_conversion();	
 		while(converting()) ;	
 		if(ADC10MEM <= 380)
-			P1OUT=0x40;
+			P1OUT = 0x40;
 		else
-			P1OUT=0x00;
+			P1OUT = 0x00;
 		for(i=0;i< 22000;++i) ;
 	}
 }
