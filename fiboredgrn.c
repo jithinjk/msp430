@@ -3,7 +3,11 @@ unsigned lfsr = 0xAFCCu;
 unsigned bit = 0;
 void delay()
 {
+<<<<<<< HEAD
 	int i;
+=======
+	int i ;
+>>>>>>> ff042a2a6e07e2044d5027c254f6088cbe07bf6d
 	for(i=0;i<17171;++i) ;
 }
 main()
