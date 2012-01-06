@@ -1,7 +1,7 @@
 #include <msp430.h>
 #define LED_0 BIT0
 
-volatile int count = 0;
+volatile int count = 0 ;
 
 __attribute__((interrupt(TIMERA1_VECTOR)))
 timer_isr(void)
