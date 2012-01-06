@@ -3,7 +3,7 @@ main()
 {
 	P1DIR = 0x0001 ;
 	P1OUT = 0x0001 ;
-	TACTL = 0x0260 ;
+	TACTL = 0x02E0 ;
 	while(1)
 	{
 		while(!(TACTL & 1)) ;
@@ -11,3 +11,4 @@ main()
 		P1OUT ^= 0x0001 ;
 	}
 }
+
