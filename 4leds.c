@@ -11,8 +11,8 @@ main()	//4leds blink.
 	while(1)
 	{
 		delay();
+		P1OUT<<=1;
 		if(P1OUT==0x08)
 			P1OUT=0x01;
-		P1OUT<<=1;
 	}
 }
