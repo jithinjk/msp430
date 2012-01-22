@@ -27,7 +27,7 @@ main()
 			on_time -= step;
 		if(on_time==0)
 			dir = 1;
-		if(on_time==MAX)
+		if(on_time>=MAX)
 			dir = -1; 
 	}	
 }
